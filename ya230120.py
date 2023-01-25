@@ -5,15 +5,11 @@ import matplotlib.pyplot as plt
 
 money = pd.read_csv("money_data7.csv")
 
+st.title(':polar_bear: This is :orange[july-ya] page :polar_bear:')
+st.sidebar.success("Select a demo above.")
 
-import streamlit as st
-
-option = st.selectbox(
-    'How would you like to choice year ?',
-    ('2020', '2021', '2022'))
-
+option = st.selectbox('How would you like to choice year ?', ('2020', '2021', '2022'))
 option2 = int(option)
-
 st.write('You selected:', option)
 
 money = money[:] [money['A_YEAR']== option2]
@@ -42,3 +38,4 @@ plt.xticks(tuple(money['A_MONTH']))
 plt.title("House Price", size = 15, color = 'lightpink')
 
 st.pyplot(fig)
+st.dataframe(money)
