@@ -37,7 +37,6 @@ plt.plot( list(money['A_MONTH']), list(money['HOUSE_PRICE']), color = 'lightpink
 plt.xticks(tuple(money['A_MONTH']))
 plt.title("House Price", size = 15, color = 'lightpink')
 
-st.balloons()
 st.snow()
 st.pyplot(fig)
 st.dataframe(money)
