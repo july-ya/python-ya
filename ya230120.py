@@ -38,5 +38,6 @@ plt.xticks(tuple(money['A_MONTH']))
 plt.title("House Price", size = 15, color = 'lightpink')
 
 st.balloons()
+st.balloons()
 st.pyplot(fig)
 st.dataframe(money)
