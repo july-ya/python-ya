@@ -11,10 +11,10 @@ st.title(':polar_bear: This is :orange[july-ya] page :polar_bear:')
 
 def plotting_demo():
   
-  uploaded_file = st.file_uploader("Choose a file")
+  #uploaded_file = st.file_uploader("Choose a file")
   
-  money = pd.read_csv(uploaded_file)
-  #money = pd.read_csv("money_data7.csv")
+  #money = pd.read_csv(uploaded_file)
+  money = pd.read_csv("money_data7.csv")
   
   option = st.selectbox('How would you like to choice year ?', ('2020', '2021', '2022'))
   option2 = int(option)
@@ -53,7 +53,8 @@ with st.form(key = 'Form1'):
     select_chart = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie', 'box', 'histogram', 'corr', 'word cloud'))
 
 if select_chart == 'line':
-  try:
-    plotting_demo()
-  except:
-    pass
+  plotting_demo()
+#  try:
+#    plotting_demo()
+#  except:
+#    pass
